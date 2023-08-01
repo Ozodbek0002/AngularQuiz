@@ -1,0 +1,90 @@
+{
+    "questions": [
+        {
+            "questionText":" What is your name?",
+            "options": [
+                {
+                    "text" : "Ozodbek",
+                    "currect": true
+                },
+                {
+                    "text" : "Samandar"
+                },
+                {
+                    "text" : "Baxodir"
+                },
+                {
+                    "text" : "Ibrohim"
+                }
+
+            ]
+            
+        },
+
+        {
+            "questionText":" What is your jop?",
+            "options": [
+                {
+                    "text" : "FrontEnd Developer",
+                    "currect": true
+                },
+                {
+                    "text" : "Wep desigin"
+                },
+                {
+                    "text" : "Java Developer"
+                },
+                {
+                    "text" : "Phyton Developer"
+                }
+
+            ]
+            
+        },
+
+        {
+            "questionText":" What are you from?",
+            "options": [
+                {
+                    "text" : "Uzbekistan",
+                    "currect": true
+                },
+                {
+                    "text" : "Arab"
+                },
+                {
+                    "text" : "USA"
+                },
+                {
+                    "text" : "Russia"
+                }
+
+            ]
+            
+        },
+
+        {
+            "questionText":" What is your age?",
+            "options": [
+                {
+                    "text" : "21",
+                    "currect": true
+                },
+                {
+                    "text" : "20"
+                },
+                {
+                    "text" : "25"
+                },
+                {
+                    "text" : "19"
+                }
+
+            ]
+            
+        }
+
+
+
+    ]
+}

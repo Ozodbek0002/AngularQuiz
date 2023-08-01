@@ -7,7 +7,7 @@
         src="https://img.icons8.com/color/96/angularjs.png"
         alt="logo"
       />
-      <h4>Welcome <span class="fw-bold text-primary"> Ozodbek </span></h4>
+      <h4>Welcome <span class="fw-bold text-primary"> {{ name}} </span></h4>
     </div>
 
     <div class="d-flex justify-content-around p-3">
@@ -17,10 +17,42 @@
       <div class="queastion-remain">Questions 1 of 4</div>
 
       <div class="timer">
-        <h5>60 sec
-            <i class="fa fa-cog fa-spin"></i>
+        <h5>
+          60 sec
+          <i class="fa fa-cog fa-spin"></i>
         </h5>
       </div>
     </div>
+    <div class="progress mx-3 my-3">
+      <div
+        class="progress-bar progress-bar-striped bg-info"
+        role="progressbar"
+        style="width: 50%"
+        aria-valuenow="50"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      ></div>
+    </div>
+
+    <div class="question mx-3">
+      <div class="card">
+        <h3 class="text-center">What is Your Name?</h3>
+      </div>
+    </div>
+
+    <div class="options mx-3 my-3">
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item fw-bold">Cras justo odio</li>
+            <li class="list-group-item fw-bold">Cras justo odio</li>
+            <li class="list-group-item fw-bold">Cras justo odio</li>
+          </ol>
+    </div>
+
+    <div class="d-flex justify-content-between">
+        <button class="btn"><i class="fa fa-chevron-left fa-3x text-primary"></i></button>
+        <button class="btn"><i class="fa fa-refresh fa-3x text-primary"></i></button>
+        <button class="btn"><i class="fa fa-chevron-right fa-3x text-primary"></i></button>
+    </div>
+
   </div>
 </div>
