@@ -10,10 +10,10 @@ export class ChangeBgDirective {
 
   @HostListener('click') onClick() {
     if(this.isCorrect) {
-      this.render.setStyle(this.el.nativeElement, 'background-color', 'green');
+      this.render.setStyle(this.el.nativeElement, 'background', '#11de29cc');
     }else {
-      this.render.setStyle(this.el.nativeElement, 'background-color', 'red');
+      this.render.setStyle(this.el.nativeElement, 'background', '#ff0000cc');
     }
-  }f
+  }
 
 }

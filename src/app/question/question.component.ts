@@ -18,6 +18,7 @@ export class QuestionComponent implements OnInit {
   currectAnswer = 0;
   IncorrectAnswer = 0;
   interval$:any;
+  isQuizCompeted = false;
 
   constructor(private questionService: QuestionService) { }
 
@@ -45,15 +46,28 @@ export class QuestionComponent implements OnInit {
     this.currentQuestion--;
   }
 
+
   answer(currentQ: number, option: any){
+    if(currentQ === this.questionList.length ) {
+      setTimeout(() => {
+        this.isQuizCompeted = true;
+      }, 1000);
+      this.stopCounter();
+    }
     if(option.currect) {
       this.points+=10;
       this.currectAnswer++;
-      this.currentQuestion++;
+      setTimeout(() => {
+        this.currentQuestion++;
+        this.resetCounter();
+      }, 500);
     }else {
       this.points-=10;
       this.IncorrectAnswer++;
-      this.currentQuestion++;
+      setTimeout(() => {
+        this.currentQuestion++;
+        this.resetCounter();
+      }, 500);
     }
     if(this.currentQuestion === this.questionList.length) {
       clearInterval(this.interval$);
@@ -83,6 +97,8 @@ export class QuestionComponent implements OnInit {
   }
 
   resetCounter(){
+    this.isQuizCompeted = false;
+    this.currectAnswer = 0;
     this.stopCounter();
     this.counter = 60;
     this.startCounter();

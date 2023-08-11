@@ -5,10 +5,7 @@ li{
     padding: 10px;
     margin: 10px;
     &:hover{
-        background-color: rgba(17, 222, 41, 0.8);
-    }
-    &.selected{
-        background-color: rgb(255, 255, 255, .8);
+        background-color: #11de29cc;
     }
     transition: background-color 0.5s ease-in-out;
     
